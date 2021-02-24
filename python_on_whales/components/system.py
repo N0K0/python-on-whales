@@ -218,7 +218,7 @@ class SystemInfo(DockerCamelModel):
     experimental_build: bool
     server_version: str
     cluster_store: Optional[str]
-    runtimes: Dict[str, Runtime]
+    runtimes: Optional[Dict[str, Runtime]]
     default_runtime: str
     swarm: SwarmInfo
     live_restore_enabled: bool
